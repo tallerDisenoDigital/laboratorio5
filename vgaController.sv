@@ -45,7 +45,8 @@
    assign o_hs = ~(hSyncSF & hSyncEF);
    assign o_vs = ~(vSyncSF & vSyncEF);
 	assign o_sync_n = o_hs & o_vs;
-	assign o_blank_n = ~hBlankF | ~vBlankF;
+	
+	assign o_blank_n = hBlankF & vBlankF;
 	
 	
    assign o_x = (hBlankF) ? hCnt : HACTIVE - 1;
