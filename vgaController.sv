@@ -49,7 +49,7 @@
 	assign o_blank_n = hBlankF & vBlankF;
 	
 	
-   assign o_x = (hBlankF) ? hCnt : HACTIVE - 1;
-   assign o_y = (vBlankF) ? vCnt : VACTIVE - 1;
+   assign o_x = (hBlankF) ? hCnt : HACTIVE;
+   assign o_y = (vBlankF) ? vCnt : VACTIVE;
 	
 endmodule
