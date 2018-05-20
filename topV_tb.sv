@@ -5,7 +5,7 @@ module topV_tb;
 	
 	
 	initial begin
-		clkIn = 0;
+		clkIn = 1;
 		rst = 1;
 		#10000 rst = 0;
 	end
